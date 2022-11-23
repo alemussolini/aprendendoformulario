@@ -11,14 +11,38 @@ form{
     width: 96%;
     max-width: 600px;
     margin: 0 auto;
+    text-align: center;
+}
+
+.tform{
+    font-size: 21px;
+    color: black;
 }
 
 form fieldset{
-    padding: 0 40px;
+    padding: 20px 40px;
     border: 1px solid #ccc;
 }
 
 form legend{
     font-size: 17px;
     color:black
+}
+
+form input[type=text]{
+    display: inline-block;
+    margin-top: 30px;
+    width: 80%;
+    padding: 10px 13px;
+}
+
+form input[type=text]:focus{
+    outline: 0;
+}
+
+form select{
+    width:calc(80% + 26px);
+    margin-top: 30px;
+    padding: 10px 13px;
+    display: inline-block;
 }
