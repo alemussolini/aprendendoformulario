@@ -10,7 +10,7 @@ html, body{
 form{
     width: 96%;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 30px auto;
     text-align: center;
 }
 
@@ -34,9 +34,10 @@ form input[type=text]{
     margin-top: 30px;
     width: 80%;
     padding: 10px 13px;
+    border: 1px solid #ccc;
 }
 
-form input[type=text]:focus{
+form input[type=text]:focus, form select:focus, form textarea:focus{
     outline: 0;
 }
 
@@ -45,4 +46,43 @@ form select{
     margin-top: 30px;
     padding: 10px 13px;
     display: inline-block;
+    border: 1px solid #ccc;
+}
+
+form h2{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.input{
+    display: inline-block;
+    text-align: left;
+    font-size: 16px;
+}
+
+.input span{
+    margin-left: 13px;
+    font-size: 16px;
+    color: rgb(130,130,130);
+}
+
+form textarea{
+    font-family: tahoma;
+    border: 1px solid #ccc;
+    resize: none;
+    margin-top: 30px;
+    width: 80%;
+    height: 140px;
+    padding: 10px 13px;
+}
+
+form input[type=submit]{
+    margin-top: 30px;
+    border: 0;
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #ccc;
 }
